@@ -28,9 +28,14 @@
 
     <div class="block2" >
         <div class="block6" > 
+            <img id="imagen" src="images/Muneco.png" alt="Logo" />
             <h1 id="block2"></h1>
-        </div>
-       
+            <h4 id="texto1">Ningún mensaje fue encontrado</h4>
+            <br>
+            <p id="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div  >
+           
+
         <button onclick="copyResult()" class="button button3">Copiar</button>
    
     </div>
@@ -38,5 +43,24 @@
 
 
 </body>
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function() {
+			const miH1 = document.getElementById('block2');
+			if (miH1.innerText !== '') {
+				//miFuncion();
+                alert("hola");
+			}
+		});
+
+
+
+f
+}
+
+
+</script>
 
 </html>

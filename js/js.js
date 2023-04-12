@@ -29,6 +29,7 @@ function encryptWord() {
   }
   var myDiv = document.getElementById("block2");
   myDiv.innerHTML = encrypted;
+  miFuncion();
 }
 
 function decryptWord() {
@@ -100,7 +101,29 @@ function copyResult() {
   
   alert("The result has been copied to the clipboard.");
   }
-  
+
+
+
+
+  function miFuncion() {
+    const titulo = document.getElementById("block2");
+    const texto1 = document.getElementById("texto1");
+    const texto2 = document.getElementById("texto2");
+    const imagen = document.getElementById("imagen");
+    
+    if (titulo.innerText === "") {
+        imagen.style.display = "block";
+        texto1.innerHTML = "Ningún mensaje fue encontrado";
+        texto2.innerHTML = "Ingresa el texto que desees encriptar o desencriptar.";
+    }
+    else {
+        imagen.style.display = "none";
+        texto1.innerHTML = "";
+        texto2.innerHTML = "";
+        titulo.style.display = "block";
+        document.getElementById("block2").style.fontSize = "50px";
+    }
+  }
   
   
   
