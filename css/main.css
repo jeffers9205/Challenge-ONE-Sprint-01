@@ -1,0 +1,292 @@
+html, body {
+
+  margin: 0;
+  padding: 0;
+  background-color: #D8DFE8;
+  color: #0A3871;
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.block1 {
+
+  float: left;
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+.block2 {
+  background-color: white;
+  float: right;
+  width: 30%;
+  height: 944px;
+  border-radius: 30px;
+
+
+}
+
+.block3 {
+
+  float: left;
+  width: 70%;
+
+
+}
+
+.block4 {
+	
+      float: right;
+      width: 70%;
+      height: 700px;
+      
+
+}
+
+.block5 {
+
+
+  justify-content: center; /* centrar los elementos horizontalmente */
+  align-items: center; /* centrar los elementos verticalmente */
+  
+}
+
+.input {
+
+top: 168px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+
+background-color: #D8DFE8;
+
+}
+
+
+.input::-webkit-input-placeholder { color: blue; } /* WebKit */
+.input:-moz-placeholder { color: blue; } /* Firefox 18- */
+.input::-moz-placeholder { color: blue; } /* Firefox 19+ */
+.input:-ms-input-placeholder { color: blue; } /* IE 10+ */
+
+
+
+
+
+.button {
+  /* estilos existentes */
+  width: 200px;
+  height: 48px;
+  left: 150px;
+  top: 1000px;
+}
+
+/* estilos para el botón verde */
+.button1 {
+  width: 328px;
+  height: 67px;
+  margin-right: 10px; /* agregar un espacio de 10 píxeles a la derecha del primer botón */
+  
+  /* Dark blue/dark-blue-300 */
+  
+  background: #0A3871;
+  border-radius: 24px;
+  color: white;
+}
+
+/* estilos para el botón azul */
+.button2 {
+  width: 328px;
+  height: 67px;
+  
+  /* Dark blue/dark-blue-300 */
+  
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+}
+
+.button3 {
+  position:sticky;
+  width: 300px;
+  height: 67px;
+  top: 900px;
+
+ 
+  /* Dark blue/dark-blue-300 */
+  
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+}
+
+
+  /* Estilos para pantallas más pequeñas */
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+  }
+ @media screen and (max-width: 1134px) {
+
+  .block1 {
+
+    float: left;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  
+  }
+
+  .container {
+ 
+  width: 1134px;
+  }
+
+  .block2 {
+  /* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 32px;
+width: 800px;
+position: absolute;
+height: 400px;
+left: 40px;
+top: 1001px;
+
+/* White */
+
+background: #FFFFFF;
+/* shadow */
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+  
+  
+  }
+
+
+
+
+  @media screen and (max-width: 900px) {
+
+
+
+  .button1 {
+    width: 300px;
+    height: 67px;
+    margin-right: 0px; /* agregar un espacio de 10 píxeles a la derecha del primer botón */
+    top: 870px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+  }
+  
+  /* estilos para el botón azul */
+  .button2 {
+    width: 300px;
+    height: 67px;
+    top: 870px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+  }
+  .block2 {
+    /* Auto layout */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 32px;
+
+  width: 600px;
+  height: 400px;
+  left: 40px;
+  top: 1001px;
+  
+  /* White */
+  
+  background: #FFFFFF;
+  /* shadow */
+  
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+    
+    
+    }
+  
+  }
+  @media screen and (max-width: 771px) {
+
+
+
+    
+    .block5 {
+      /* Auto layout */
+      left: 40px!important;
+    
+    }
+    .block2 {
+      /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+  
+    width: 200px;
+    height: 400px;
+    left: 40px;
+    top: 1001px;
+    
+    /* White */
+    
+    background: #FFFFFF;
+    /* shadow */
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+      
+      
+      }
+    
+      .button3 {
+        width: 150px;
+        height: 67px;
+        top: 870px;
+        
+        /* Dark blue/dark-blue-300 */
+        
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+      }
+    
+    }
+
+
+
+    
+ };
+
