@@ -1,5 +1,10 @@
-function encriptarPalabra(palabra) {
+function encriptarPalabra() {
     let encriptada = "";
+
+    var texto = document.getElementById("encriptar").value;
+
+    var palabra = texto.toLowerCase();
+
     for (let i = 0; i < palabra.length; i++) {
       let letra = palabra[i];
       switch (letra) {
@@ -22,10 +27,15 @@ function encriptarPalabra(palabra) {
           encriptada += letra;
       }
     }
-    return encriptada;
+    var miDiv = document.getElementById("block2");
+    miDiv.innerHTML =encriptada;
   }
   
-  function desencriptarPalabra(palabraEncriptada) {
+  function desencriptarPalabra() {
+
+    var texto = document.getElementById("encriptar").value;
+
+    var palabraEncriptada = texto.toLowerCase();
     let desencriptada = "";
     for (let i = 0; i < palabraEncriptada.length; i++) {
       let letra = palabraEncriptada.substring(i, i + 1);
@@ -47,25 +57,25 @@ function encriptarPalabra(palabra) {
           }
           break;
         case "a":
-          if (palabraEncriptada.substring(i + 1, i + 3) === "ai") {
+          if (palabraEncriptada.substring(i + 1, i + 2) === "i") {
             desencriptada += "a";
-            i += 2;
+            i += 1;
           } else {
             desencriptada += letra;
           }
           break;
         case "o":
-          if (palabraEncriptada.substring(i + 1, i + 5) === "ber") {
+          if (palabraEncriptada.substring(i + 1, i + 4) === "ber") {
             desencriptada += "o";
-            i += 4;
+            i += 3;
           } else {
             desencriptada += letra;
           }
           break;
         case "u":
-          if (palabraEncriptada.substring(i + 1, i + 5) === "fat") {
+          if (palabraEncriptada.substring(i + 1, i + 4) === "fat") {
             desencriptada += "u";
-            i += 4;
+            i += 3;
           } else {
             desencriptada += letra;
           }
@@ -74,5 +84,6 @@ function encriptarPalabra(palabra) {
           desencriptada += letra;
       }
     }
-    return desencriptada;
+    var miDiv = document.getElementById("block2");
+    miDiv.innerHTML =desencriptada;
   }

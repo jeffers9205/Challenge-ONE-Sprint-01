@@ -7,7 +7,7 @@
     <title>Preview</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/js"></script>
+    <script src="js/js.js"></script>
 </head>
 
 <body>
@@ -18,16 +18,18 @@
             <img class="logo" src="images/logo.png" alt="Logo" />
         </div>
         <div class="block4">
-            <input type="text" class="input" name="input" placeholder="Ingrese el texto aqui" >
+            <input type="text" class="input"  id="encriptar" name="input" placeholder="Ingrese el texto aqui" >
         </div>
         <div class="block5">
-            <button class="button button1">Encriptar</button>  
-            <button class="button button2">Desencriptar</button>
+            <button onclick="encriptarPalabra()"  class="button button1">Encriptar</button>  
+            <button onclick="desencriptarPalabra()" class="button button2">Desencriptar</button>
           </div>
     </div>
 
-
-    <div class="block2">
+    <div class="block2" >
+        <div class="block6" > 
+            <h1 id="block2"></h1>
+        </div>
        
         <button class="button button3">Copiar</button>
    
