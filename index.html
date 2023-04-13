@@ -11,35 +11,41 @@
 </head>
 
 <body>
-<div class="container">
- 
-  <div class="block1">
-        <div class="block3">
-            <img class="logo" src="./images/Logo.png" alt="Logo" />
-        </div>
-        <div class="block4">
-            <input type="text" class="input"  id="encriptar" name="input" placeholder="Ingrese el texto aqui" >
-        </div>
-        <div class="block5">
-            <button onclick="encryptWord()"  class="button button1">Encriptar</button>  
-            <button onclick="decryptWord()" class="button button2">Desencriptar</button>
-          </div>
-    </div>
+    <div class="flex-container">
 
-    <div class="block2" >
-        <div class="block6" > 
-            <img id="imagen" src="./images/Muneco.png" alt="Logo" />
-            <h1 id="block2"></h1>
-            <h4 id="texto1">Ningún mensaje fue encontrado</h4>
-            <br>
-            <p id="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
-        </div  >
-           
+        <div class="flex-item-left">
 
-        <button onclick="copyResult()" class="button button3">Copiar</button>
-   
-    </div>
-</div>
+            <div class="block">
+                <img class="logo" id="img" src="./images/Logo.png" alt="Logo" />
+            </div>
+            <div class="block">
+                <input type="text" class="input" id="encriptar" name="input" placeholder="Ingrese el texto aqui">
+            </div>
+
+            <div class="flex-container2">
+                <button onclick="encryptWord()" class="button button1">Encriptar</button>
+                <button onclick="decryptWord()" class="button button2">Desencriptar</button>
+            </div>
+
+        </div>
+
+
+        <div class="flex-item-right">
+            <div class="block">
+                <img id="imagen" src="./images/Muneco.png" alt="Logo" />
+                <h1 id="block2"></h1>
+            </div>
+            <div class="block">
+                <h4 id="texto1">Ningún mensaje fue encontrado</h4>
+                <p id="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="block">
+                <button onclick="copyResult()" class="button button3">Copiar</button>
+            </div>
+
+
+        </div>
+
 
 
 </body>
